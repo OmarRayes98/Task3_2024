@@ -1,0 +1,16 @@
+.video-content__cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 75px 0px;
+}
+.float-container{
+    padding-bottom: 20px;
+}
+
+@media (max-width:992px){
+    .video-content__cards{
+        flex-direction: column;
+        gap: 30px;
+    }
+}

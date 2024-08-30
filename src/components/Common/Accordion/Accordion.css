@@ -1,0 +1,27 @@
+
+.featured__content_accordion{
+    background-color: var(--background-color);
+    border-radius: 8px;
+}
+
+.featured__content_accordion-item dt{
+    padding: 15px 15px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    
+}
+.featured__content_accordion-item:last-child dt{
+    border: none;
+}
+
+.featured__content_accordion-item p{
+    line-height: 1.5rem;
+    padding: 15px;
+}
+
+.featured__content_accordion-item dt a{
+   text-decoration: none;
+   color: var(--black-color);
+   font-weight: 500;
+   cursor: pointer;
+}
+

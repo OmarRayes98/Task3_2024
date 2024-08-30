@@ -1,0 +1,23 @@
+.contact-content__left_cards_card{
+padding: 23px 20px;
+border-radius: 20px;
+box-shadow: var(--shadow-color);
+display: flex;
+align-items: center;
+gap: 15px;
+
+}
+
+.contact-content__left_cards_card__info{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.contact-content__left_cards_card__info span:last-child{
+    color: gray;
+    font-size: 0.7rem;
+}
+@media (max-width:992px){
+    
+}

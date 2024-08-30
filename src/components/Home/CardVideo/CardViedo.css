@@ -1,0 +1,37 @@
+
+.card-video__box{
+    background-color: #ffeee9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 225px;
+    padding: 20px 28px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card-video__box_number{
+font-size: 1.8rem;
+font-weight: bold;
+color: var(--main-color);
+}
+
+
+.card-video__info{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.card-video__info span:first-child{
+margin-bottom: 8px;
+}
+
+.card-video__box_circle{
+    background-color: var(--main-color);
+    padding: 20px;
+    position: absolute;
+    top: -15px;
+    border-radius: 50px;
+    right: -12px;
+}

@@ -1,0 +1,55 @@
+
+.properties-page__btns{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+gap: 25px;
+flex-wrap: wrap;
+margin: 50px 0px;
+}
+
+.properties-page__btns .Deal__btn_customize{
+    border-radius: 5px;
+} 
+
+
+
+.properties-page__cards{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.properties-page__pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0px ;
+    gap: 15px;
+}
+
+.properties-page__pagination span{
+    background-color: var(--main-color);
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:992px){
+    .properties-page__cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:768px){
+    .properties-page__cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

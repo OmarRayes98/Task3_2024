@@ -1,0 +1,18 @@
+.form__contact{
+
+}
+
+.form__control{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 16px 0px;
+}
+
+.form__control >input , .form__control >textarea{
+    border-radius: 20px ;
+    padding: 16px;
+    background-color: #fafafa;
+    border: none;
+
+}

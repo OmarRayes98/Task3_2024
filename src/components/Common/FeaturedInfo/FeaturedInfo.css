@@ -1,0 +1,44 @@
+
+/*info card*/
+.featured__info_box{
+    background-color: var(white-color);
+    box-shadow: var(--shadow-color);
+}
+.featured__info_card{
+    padding: 29px 20px 0px 20px;
+    border-radius: 8px;
+}
+
+.fetured__item{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    padding-bottom: 29px;
+}
+
+.featured__info_card:last-child .fetured__item{
+    border-bottom: none;
+}
+
+.fetured__item_info p{
+    margin: 0px;
+    color: rgba(128, 128, 128, 0.5);
+    font-size: 0.9rem;
+
+}
+
+.fetured__item_img p{
+    margin: 0px 0px 5px 0px;
+    color: rgba(128, 128, 128, 0.5);
+    font-size: 0.9rem;
+
+}
+.fetured__item_info p:first-child{
+    color: var(--black-color);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
