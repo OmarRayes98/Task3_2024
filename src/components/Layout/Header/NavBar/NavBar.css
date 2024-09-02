@@ -14,10 +14,26 @@
     color: var(--black-color);
     cursor: pointer;
     text-decoration: none;
+    transition: color .2s ease-in-out;
+    position: relative;
 }
 
 .navbar-link.active{
 color: var(--main-color);
+}
+
+.navbar-link::before{
+content: "";
+height: 1.5px;
+background-color: var(--main-color);
+position: absolute;
+bottom: -5px;
+transition: width .2s ease-in-out;
+width: 0%;
+
+}
+.navbar-link:hover::before{
+    width: 100%;
 }
 
 .navbar-link:hover {
@@ -50,5 +66,8 @@ color: var(--main-color);
 
     .navbar-link{
         margin: 15px 0;
+    }
+    .navbar-link::before{
+        display: none;
     }
 }

@@ -8,7 +8,9 @@
     z-index: 111;
     left: 0;
     right: 0;
+    top: 65px;
     background-color: white;
+    transition: background-color .5s ease-out , box-shadow .3s ease-out,top .2s ease-in-out;
 }
 
 .header__logo{
@@ -27,8 +29,11 @@
 
 @media (max-width:768px){
 
+    /*header and upperBar related to together .  so top has effect when upperBar still show or hide*/
     .header{
         padding: 20px 10px;
+        top: initial;
+
     }
 
     .header__logo{
@@ -40,3 +45,13 @@
         line-height: 1rem;
     }
 }
+
+/* I do not need animation anymore 
+@media (max-width:450px){
+    
+    upperBar will be hide under 450px 
+    .header{
+        top: initial;
+    }
+}
+*/

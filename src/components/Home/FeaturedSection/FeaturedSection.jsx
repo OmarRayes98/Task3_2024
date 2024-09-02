@@ -7,14 +7,14 @@ import FeaturedInfo from "../../../components/Common/FeaturedInfo/FeaturedInfo";
 const FeaturedSection = () => {
   return (
     <section className="featured">
-            <div className="featured__image">
+            <div className="featured__image" data-aos="fade-right" data-aos-duration="800" >
                 <img src={featureImage} alt="feature" />
                 <div className="featured__image_icon">
                 <img src={featureIcon} alt="feature Icon" />
                 </div>
             </div>
 
-            <div className="featured__content">
+            <div className="featured__content" data-aos="fade-up" data-aos-duration="800">
                 <p className="featured__content_title">
                     Featured
                 </p>
@@ -39,7 +39,9 @@ const FeaturedSection = () => {
 
             </div>
 
+            <div data-aos="fade-left" data-aos-duration="800">
             <FeaturedInfo/>
+            </div>
 
 
     </section>

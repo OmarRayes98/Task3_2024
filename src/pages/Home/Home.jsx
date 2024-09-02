@@ -17,6 +17,7 @@ const Home = () => {
 
   return (
     <>
+
     <Banner/>
     <Container>
       <FeaturedSection/>
@@ -28,7 +29,7 @@ const Home = () => {
     </section>
 
     <Container>
-    <section className="video-content__cards">
+    <section className="video-content__cards" data-aos="zoom-in" data-aos-duration="800">
         <CardVideo number="34" title="building" subTitle="finished now"/>
         <CardVideo number="12" title="years" subTitle="experince"/>
         <CardVideo number="24" title="awwards" subTitle="won 2023"/>
@@ -36,7 +37,9 @@ const Home = () => {
 
     </Container>
 
+    <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
     <BestDeal/>
+    </section>
     
     <Container>
     <PropetiesSection/>

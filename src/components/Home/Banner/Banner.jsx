@@ -46,16 +46,24 @@ const Banner = () => {
         <FaChevronRight onClick={goToNext}/>
         </span>
 
-      <img className="banner__img" src={`${slides[currentBannerByIndex].url}`} alt="banner" />
-
-      <h1 className="banner__title">
-        <span>
+        <h1 className="banner__title" >
+        <span data-aos="fade-up" data-aos-duration="800">
         Hurry!
         </span>
-        <span>
+        <span data-aos="fade-up" data-aos-duration="1000">
           Get the best Villa for you
         </span>
       </h1>
+
+
+      
+        {slides.map((slide, slideIndex) => (
+      
+        <div key={slideIndex} className={`slide ${currentBannerByIndex===slideIndex?'active_img':''}`}>
+      <img key={slideIndex} className={`banner__img`} src={`${slide.url}`} alt="banner" />
+
+        </div>
+        ))}
 
       <div className="dots__container">
         {slides.map((slide, slideIndex) => (

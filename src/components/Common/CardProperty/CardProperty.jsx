@@ -1,65 +1,38 @@
+/* eslint-disable react/prop-types */
 import "./CardProperty.css";
-import image from "../../../assets/images/property-01.jpg";
 import Button from "../Button/Button";
 
 
-const CardProperty = () => {
+const CardProperty = ({type,price,text,image,category,details}) => {
   return (
     <div className="card-property">
 
-        <img src={image} alt="propery" />
+        <img src={image} alt={category} />
         <div className="card-property_type">
             <span>
-                Luxry Villa
+                {type}
             </span>
             <span>
-                $2.246.00
+                {price}
             </span>
         </div>
         <h3 className="card-property_text">
-        18 New Street Miami, OR 98272
+        {text}
         </h3>
 
         <div className="card-property_tags">
-        <h4>
+            {
+                details.map((item,index)=>(
+                <h4 key={index}>
 
-                    Bedrooms:
+                    {item.title}
                 <span>
-                    8
+                    {item.count}
                 </span>
-        </h4>
+               </h4>
+                ))
+            }
 
-        <h4>
-                
-                    Bathrooms:
-                <span>
-                    8
-                </span>
-        </h4>
-
-        <h4>
-                
-                Area:
-            <span>
-                555m2
-            </span>
-        </h4>
-
-        <h4>
-                
-                Floor:
-            <span>
-                3
-            </span>
-        </h4>
-
-        <h4>
-                
-                Parking:
-            <span>
-                6 spots
-            </span>
-        </h4>
         </div>
 
         <div className="card-property_line">

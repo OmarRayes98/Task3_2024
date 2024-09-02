@@ -50,7 +50,7 @@ const ContactUsContent = () => {
   width="600"
   height="450"
   style={{ border: 'none' }}
-  allowfullscreen=""
+  allowFullScreen=""
   loading="lazy"
 />
     </section>

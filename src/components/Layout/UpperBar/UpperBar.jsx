@@ -2,33 +2,33 @@ import "./UpperBar.css";
 import  {FaMap ,FaFacebook ,FaTwitter, FaLinkedin,FaInstagram}  from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Container from "../../Common/Container/Container";
-import { useEffect, useState } from "react";
 
 const UpperBar = () => {
 
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > document.querySelector('.upperbar').offsetHeight) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > document.querySelector('.upperbar').offsetHeight) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //     console.log(document.querySelector('.upperbar').offsetHeight,"document.querySelector('.upperbar').offsetHeight")
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
 
 
 
   return (
-    <section className="upperbar" style={{display:isScrolled?'none':''}}>
+    <section className="upperbar">
     <Container>
       <div className="upperbar__row">
 

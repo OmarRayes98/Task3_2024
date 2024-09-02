@@ -9,6 +9,7 @@ import { Fragment, useState } from 'react';
 const BestDeal = () => {
 
     const  [isActiveBtnIndex,setIsActiveBtnIndex]= useState(2)
+    
 
 
     const arrayBestDeal = [

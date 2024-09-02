@@ -95,6 +95,8 @@ background-color: var(--main-color);
 
 .Deal__container_middle img {
     width: 460px;
+    opacity: 1;
+    transition: all 1s ease-in ;
 }
 
 .Deal__container_right {
