@@ -1,9 +1,10 @@
 import { RouterProvider } from "react-router-dom"
 import router from "./routes"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from 'aos';
 
 function App() {
+  const [domLoaded, setDomLoaded] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -21,14 +22,29 @@ function App() {
       loadingDuration: 200,
       optional: true,
     });
+
+    setDomLoaded(true);
+
   }, []);
 
 
-  return (
+  
+  if (!domLoaded) {
+    return null;
+  }
+
+
+  if (typeof window === "undefined") {
+    return <></>;
+  } else {
+
+    return (
     <main className="main-parent">
-     <RouterProvider router={router} /> 
-    </main>
-  )
+    <RouterProvider router={router} /> 
+   </main>);
+  }
+
+
 }
 
 export default App
